@@ -9,6 +9,8 @@ namespace CarStorage
             Car[] cars = new Car[3];
             for (int i = 0; i < cars.Length; i++)
             {
+                cars[i] = new Car();
+
                 Console.WriteLine("Please enter car's name:");
                 cars[i].Name = Console.ReadLine();
 
@@ -20,5 +22,6 @@ namespace CarStorage
             }
 
             Console.WriteLine($"Source price: {cars[0].Price} ; Price after sale: {cars[0].GetSale()}");
+        }
     }
 }
